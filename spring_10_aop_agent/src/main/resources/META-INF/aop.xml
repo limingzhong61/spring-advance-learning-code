@@ -1,0 +1,9 @@
+<aspectj>
+    <aspects>
+        <aspect name="top.jacktgq.aop.MyAspect"/>
+        <weaver options="-verbose -showWeaveInfo">
+            <include within="top.jacktgq.service.MyService"/>
+            <include within="top.jacktgq.aop.MyAspect"/>
+        </weaver>
+    </aspects>
+</aspectj>
